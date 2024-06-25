@@ -121,8 +121,9 @@ map_leaflet_airport <- function(df, airports_location, months, years){
   trafic_date <- df %>%
     mutate(
       date = as.Date(paste(anmois, "01", sep=""), format = "%Y%m%d")
-    ) %>%
-    filter(mois %in% month, an %in% year)
+    ) #%>%
+    #filter(mois %in% month, an %in% year)
+  
   trafic_aeroports <- airports_location %>%
     inner_join(trafic_date, by = c("Code.OACI" = "apt"))
   
