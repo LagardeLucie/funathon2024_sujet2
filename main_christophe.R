@@ -28,9 +28,9 @@ airports_location <- st_read(urls$geojson$airport)
 
 # Pour faire des petits navions ;°)
 AvionIcon <- makeIcon(
-  iconUrl = "christophe/aeroport.png",
-  iconWidth = 30, 
-  iconHeight = 30
+  iconUrl = "christophe/aéroport-icone.png",
+  iconWidth = 25, 
+  iconHeight = 25
 )
 
 
