@@ -28,7 +28,6 @@ YEARS_LIST  <- as.character(2018:2022)
 MONTHS_LIST <- 1:12
 year <- YEARS_LIST[1]
 month <- MONTHS_LIST[1]
-palette <- c("green", "blue", "red")
 
 
 # Création de tous les urls des sources ----------------------------------------
@@ -87,4 +86,4 @@ create_table_airports(stats_aeroports)
 
 # Valorisation 3 ===============================================================
 
-
+map_leaflet_airport(aeroports, localisations_aeroports, month, year)
